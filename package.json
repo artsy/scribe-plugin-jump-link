@@ -1,0 +1,24 @@
+{
+  "name": "scribe-plugin-jump-link",
+  "version": "1.0.0",
+  "description": "A Scribe plugin that creates a jump link on a highlighted piece of text\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artsy/scribe-plugin-jump-link.git"
+  },
+  "keywords": [
+    "scribe",
+    "plugin",
+    "jumplink"
+  ],
+  "author": "Kana Abe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artsy/scribe-plugin-jump-link/issues"
+  },
+  "homepage": "https://github.com/artsy/scribe-plugin-jump-link#readme"
+}
