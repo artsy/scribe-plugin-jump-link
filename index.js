@@ -10,7 +10,6 @@
       var jumpLinkCommand = new scribe.api.Command('createLink');
       jumpLinkCommand.nodeName = 'A';
 
-      // Show the tooltip when adding a link to unlinked text.
       jumpLinkCommand.execute = function () {
         var selection = new scribe.api.Selection(),
             that = this;
@@ -29,7 +28,7 @@
         }
       };
 
-      // Set this as the linking plugin
+      // Set this as the jump linking plugin
       scribe.commands.jumpLink = jumpLinkCommand;
     };
   };
