@@ -22,9 +22,15 @@
           var startOffset = selection.range.startOffset
           var numOfChar = selection.range.endOffset - startOffset
           var replace = fullString.substr(startOffset, numOfChar)
-          replace = "<a class='is-jump-link' name=" + replace + ">" + replace + '</a>'
-          var newHtml = splice(fullString, startOffset, numOfChar, replace)
-          $(selection.selection.baseNode).replaceWith(newHtml)
+          if (selection.selection.baseNode.parentNode.nodeName === 'A'){
+            var parent = selection.selection.baseNode.parentElement
+            parent.classList.add('is-jump-link')
+            parent.setAttribute('name', replace)
+          }else{
+            replace = "<a class='is-jump-link' name=" + replace + ">" + replace + '</a>'
+            var newHtml = splice(fullString, startOffset, numOfChar, replace)
+            $(selection.selection.baseNode).replaceWith(newHtml)
+          }
         }
       };
 

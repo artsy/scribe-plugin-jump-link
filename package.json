@@ -1,6 +1,6 @@
 {
   "name": "scribe-plugin-jump-link",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Scribe plugin that creates a jump link on a highlighted piece of text\"",
   "main": "index.js",
   "scripts": {
